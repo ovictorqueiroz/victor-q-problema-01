@@ -26,9 +26,9 @@
     }
 
     if($_SESSION['userweight1'] > $_SESSION['userweight2']){
-       $maisPesado = $_SESSION['username1'] ."é o mais pesado" . "<br>";
+       $maisPesado = $_SESSION['username1'] ." é o mais pesado" . "<br>";
     }else{
-       $maisPesado = $_SESSION['username2'] ."é o mais pesado" . "<br>";
+       $maisPesado = $_SESSION['username2'] ." é o mais pesado" . "<br>";
     }
 ?>
 
@@ -41,10 +41,14 @@
     <title>Comparando Dados</title>
 </head>
 <body>
-    <header>
+     <header>
         <h1>COMPARANDO DADOS</h1>
     </header>
 
-    
+    <main class="container">
+        <h3><?php echo $maisAlto; ?></h3>
+        <h3><?php echo $maisVelho; ?></h3>
+        <h3><?php echo $maisPesado; ?></h3>
+    </main>
 </body>
 </html>
